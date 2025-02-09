@@ -2,7 +2,7 @@
 - [Giving Computers the Ability to Learn from Data](#giving-computers-the-ability-to-learn-from-data)
   - [Building intelligent machines to transform data into knowledge](#building-intelligent-machines-to-transform-data-into-knowledge)
   - [The three different types of machine learning](#the-three-different-types-of-machine-learning)
-    - [Making predictions about the future with supervised learning](#making-predictions-about-the-future-with-supervised-learning)
+    - [Making predictions about the future with Supervised Learning](#making-predictions-about-the-future-with-supervised-learning)
     - [Solving interactive problems with reinforcement learning](#solving-interactive-problems-with-reinforcement-learning)
     - [Discovering hidden structures with unsupervised learning](#discovering-hidden-structures-with-unsupervised-learning)
     - [In Short:](#in-short)
@@ -25,8 +25,8 @@
   - ML transforms data into actionable insights.  
 
 - **Why ML is Exciting**:  
-  - Considered the most exciting field in computer science based on author's opinion.  
   - We live in an age of abundant data, making ML highly relevant and impactful.  
+  - ML is considered the most exciting field in computer science based on author's opinion.  
 
 - **Opportunities in ML**:  
   - Open-source libraries have made ML more accessible than ever.  
@@ -80,7 +80,7 @@
 
 Let's take a look at the three types of machine learning: **supervised learning**, **unsupervised learning**, and **reinforcement learning**.
 
-### Making predictions about the future with supervised learning
+### Making predictions about the future with Supervised Learning
 
 - **Goal of Supervised Learning**:  
   - Learn a model from **labeled training data** to make predictions about **unseen or future data**.  
@@ -237,7 +237,7 @@ Let's take a look at the three types of machine learning: **supervised learning*
 
   - **Purpose**:  
     - Addresses challenges like **storage limitations** and **computational performance**.  
-    - Improves the predictive performance of machine learning algorithms by reducing noise.  
+    - Improves the predictive performance of machine learning algorithms by **reducing noise**.  
 
   - **Applications**:  
     - **Data Compression**: Reduce storage requirements.  
@@ -282,6 +282,10 @@ Let's take a look at the three types of machine learning: **supervised learning*
   - **Rows**: Represent individual flower examples.  
   - **Columns**: Represent features (e.g., sepal length, sepal width, petal length, petal width).  
 
+- **General Notation**:  
+  - **Superscript (i)**: Refers to the **ith training example**.  
+  - **Subscript (j)**: Refers to the **jth dimension** of the training dataset.  
+
 - **Matrix Notation**:  
   - The dataset is represented as a **150×4 matrix**, denoted as $\boldsymbol{X} \in \mathbb{R}^{150 \times 4}$.  
   - Each row corresponds to a flower example:  
@@ -310,31 +314,11 @@ Let's take a look at the three types of machine learning: **supervised learning*
   \end{bmatrix}
   $$  
 
-- **General Notation**:  
-  - **Superscript (i)**: Refers to the **ith training example**.  
-  - **Subscript (j)**: Refers to the **jth dimension** of the training dataset.  
 
 - **Vectors and Matrices**:  
   - **Vectors**: Represented with **lowercase, bold-face letters** (e.g., 𝒙).  
   - **Matrices**: Represented with **uppercase, bold-face letters** (e.g., 𝑿).  
   - **Single Elements**: Written in **italics** (e.g., $x^{(n)}$ or $x_{m}^{(n)}$).  
-
-- **Example: Flower Dataset**:  
-  - $x_{1}^{(150)}$: Refers to the **first dimension** (e.g., sepal length) of the **150th flower example**.  
-  - Each row in matrix **𝑿** represents one flower instance as a **4-dimensional row vector**:  
-    $$
-    \boldsymbol{x}^{(i)} = [x_{1}^{(i)}, x_{2}^{(i)}, x_{3}^{(i)}, x_{4}^{(i)}]
-    $$  
-  - Each feature dimension is a **150-dimensional column vector**:  
-    $$
-    \boldsymbol{x}_{j} = 
-    \begin{bmatrix}
-    x_{j}^{(1)} \\
-    x_{j}^{(2)} \\
-    \vdots \\
-    x_{j}^{(150)}
-    \end{bmatrix}
-    $$  
 
 - **Target Variables (Class Labels)**:  
   - Represented as a **150-dimensional column vector**:  
@@ -356,13 +340,13 @@ Let's take a look at the three types of machine learning: **supervised learning*
 
 ### Terminology
 
-- **Training Example**: A row in a dataset table; also called observation, record, instance, or sample (sample often refers to a collection of training examples).  
-- **Training**: Also known as model fitting; in parametric models, similar to parameter estimation.  
-- **Feature (x)**: A column in a dataset; also called predictor, variable, input, attribute, or covariate.  
-- **Target (y)**: The outcome to be predicted; also known as output, response variable, dependent variable, (class) label, or ground truth.  
+- **Training Example**: A **row** in a dataset table; also called **observation**, **record**, **instance**, or **sample** (sample often refers to a collection of training examples).  
+- **Training**: Also known as **model fitting**; in parametric models, similar to **parameter estimation**.  
+- **Feature (x)**: A **column** in a dataset; also called **predictor**, **variable**, **input**, **attribute**, or **covariate**.  
+- **Target (y)**: The **outcome** to be predicted; also known as **output**, **response variable**, **dependent variable**, (**class**) **label**, or **ground truth**.  
 - **Loss Function**: Often synonymous with cost function or error function.  
-  - "Loss" may refer to a single data point’s error.  
-  - "Cost" may refer to the aggregated loss (average or sum) over the entire dataset.
+  - "**Loss**" may refer to a **single data** point’s error.  
+  - "**Cost**" may refer to the **aggregated loss** (average or sum) over the entire dataset.
 
 ---
 
