@@ -106,3 +106,5 @@
     - Ensure you have a working Python environment.  
     - Be ready to install additional libraries as required.  
     - Familiarity with basic programming and math will enhance your learning experience.
+
+01-Giving-Computers-the-Ability-to-Learn-from-Data
